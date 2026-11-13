@@ -1,4 +1,5 @@
 using Tally.Api.Swagger;
+using Tally.Api.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +16,8 @@ if (string.IsNullOrWhiteSpace(app.Configuration["ApiKey"]))
 
 app.MapOpenApi();
 app.UseSwaggerUI(options => options.SwaggerEndpoint("/openapi/v1.json", "Tally API"));
+
+app.UseMiddleware<ApiKeyMiddleware>();
 
 app.MapHealthChecks("/health");
 app.MapControllers();
