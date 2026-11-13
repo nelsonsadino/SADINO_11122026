@@ -2,8 +2,6 @@
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
@@ -16,6 +14,12 @@
 
   <ItemGroup>
     <Using Include="Xunit" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Tally.Domain\Tally.Domain.csproj" />
+    <ProjectReference Include="..\..\src\Tally.Application\Tally.Application.csproj" />
+    <ProjectReference Include="..\..\src\Tally.Infrastructure\Tally.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
