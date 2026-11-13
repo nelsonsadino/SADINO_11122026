@@ -13,4 +13,8 @@
     <Project Path="src/Tally.Domain/Tally.Domain.csproj" />
     <Project Path="src/Tally.Infrastructure/Tally.Infrastructure.csproj" />
   </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Tally.IntegrationTests/Tally.IntegrationTests.csproj" Id="ada7011b-a787-4a9c-9f8f-33a315a1b6ca" />
+    <Project Path="tests/Tally.UnitTests/Tally.UnitTests.csproj" Id="8bd88244-be23-40b9-9a19-c84920810b9f" />
+  </Folder>
 </Solution>
