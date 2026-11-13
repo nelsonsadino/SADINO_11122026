@@ -3,8 +3,11 @@
     <File Path="samples/sales.csv" />
   </Folder>
   <Folder Name="/Solution Items/">
+    <File Path=".dockerignore" />
     <File Path=".editorconfig" />
     <File Path="Directory.Build.props" />
+    <File Path="docker-compose.yml" />
+    <File Path="Dockerfile" />
     <File Path="README.md" />
   </Folder>
   <Folder Name="/src/">
