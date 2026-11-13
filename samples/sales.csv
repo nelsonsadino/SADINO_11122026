@@ -1,0 +1,7 @@
+order_id,region,product,quantity,unit_price
+1001,North,Widget,4,19.99
+1002,South,Gadget,2,49.50
+1003,East,Widget,10,19.99
+1004,West,Gizmo,1,129.00
+1005,North,Gadget,,49.50
+1006,South,Widget, Large,3,24.75
