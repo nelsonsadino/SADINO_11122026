@@ -1,1 +1,13 @@
-<Solution />
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+    <File Path="Directory.Build.props" />
+    <File Path="README.md" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/Tally.Api/Tally.Api.csproj" />
+    <Project Path="src/Tally.Application/Tally.Application.csproj" />
+    <Project Path="src/Tally.Domain/Tally.Domain.csproj" />
+    <Project Path="src/Tally.Infrastructure/Tally.Infrastructure.csproj" />
+  </Folder>
+</Solution>
