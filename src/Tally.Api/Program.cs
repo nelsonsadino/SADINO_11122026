@@ -8,6 +8,11 @@ builder.Services.AddOpenApi(options => options.AddDocumentTransformer<ApiKeySecu
 
 var app = builder.Build();
 
+if (string.IsNullOrWhiteSpace(app.Configuration["ApiKey"]))
+{
+    throw new InvalidOperationException("ApiKey is not set. Add it to appsettings or set the ApiKey environment variable.");
+}
+
 app.MapOpenApi();
 app.UseSwaggerUI(options => options.SwaggerEndpoint("/openapi/v1.json", "Tally API"));
 
